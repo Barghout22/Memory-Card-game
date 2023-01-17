@@ -18,12 +18,23 @@ function App() {
     { value: "8", id: uniqid() },
     { value: "9", id: uniqid() },
   ]);
+  const [gameResult, setGameResult] = useState("");
 
   const updateScore = (value) => {
     if (value) {
       setCurrentScore(currentScore + 1);
       if (currentScore + 1 > highScore) setHighScore(highScore + 1);
+      if (currentScore + 1 === 9) {
+        setGameResult("You Won!");
+        setCurrentScore(0);
+        setEndGame(true);
+      }
     } else {
+      if (currentScore === 9) {
+        setGameResult("You Won!");
+      } else {
+        setGameResult("Game Over!");
+      }
       setCurrentScore(0);
       setEndGame(true);
     }
@@ -48,9 +59,13 @@ function App() {
   return (
     <div className="App">
       <div>Jojo's memory game adventure! </div>
-      <div>Face Each one of the nine gods only once to pass through!</div>
-      <div>Current Score:{currentScore}</div>
-      <div>High Score: {highScore}</div>
+      {!endGame && (
+        <div>
+          <div>Face Each one of the nine gods only once to pass through!</div>
+          <div>Current Score:{currentScore}</div>
+          <div>High Score: {highScore}</div>
+        </div>
+      )}
       {/* <img src="./card_pictures/Anubis.png" alt="osiris" /> */}
       {!endGame && (
         <div className="cardContainer">
@@ -66,7 +81,7 @@ function App() {
       )}
       {endGame && (
         <div>
-          <div>Game Over!</div>
+          <div>{gameResult}</div>
           <button onClick={restartGame}>Play again</button>
         </div>
       )}
