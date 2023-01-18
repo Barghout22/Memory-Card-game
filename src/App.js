@@ -95,7 +95,9 @@ function App() {
       {endGame && (
         <div>
           <div className="scores">{gameResult}</div>
-          <div className="scores">Your Score:{yourScore}</div>
+          <div className="scores">
+            Your Score:{gameResult === "You Won!" ? 9 : yourScore}
+          </div>
           <button className="newGameBtn" onClick={restartGame}>
             Play again
           </button>
