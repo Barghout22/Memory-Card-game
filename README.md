@@ -7,9 +7,11 @@ the Main component.
 
 ## Resources that I have used while creating this project:
 
--**Colors** : Customizing Colors  Tailwind CSS **https://tailwindcss.com/docs/customizing-colors**
--**Font** : Fonts Monster Jojo font **https://fontsmonster.com/jojo-font/**
--**Card Images**: The Jojo wikipedia **https://jojo.fandom.com/wiki/Egypt_9_Glory_Gods**
+-**Colors** : Customizing Colors Tailwind CSS **https://tailwindcss.com/docs/customizing-colors**.
+
+-**Font** : Fonts Monster Jojo font **https://fontsmonster.com/jojo-font/**.
+
+-**Card Images**: The Jojo wikipedia **https://jojo.fandom.com/wiki/Egypt_9_Glory_Gods**.
 
 ### Try the Game:
 
