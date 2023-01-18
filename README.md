@@ -7,8 +7,9 @@ the Main component.
 
 ## Resources that I have used while creating this project:
 
--**Colors** : Customizing Colors - Tailwind CSS **https://tailwindcss.com/docs/customizing-colors**
--**Font** : Fonts Monster - Jojo font **https://fontsmonster.com/jojo-font/**
+-**Colors** : Customizing Colors  Tailwind CSS **https://tailwindcss.com/docs/customizing-colors**.
+
+-**Font** : Fonts Monster Jojo font **https://fontsmonster.com/jojo-font/**.
 
 ### Try the Game:
 
