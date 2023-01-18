@@ -10,8 +10,8 @@
 body {
   text-align: center;
   font-family: "MyFont";
-  background-color: #d1fae5;
-  color: #0e7490;
+  background-color: #bbf7d0;
+  color: #7c3aed;
   font-size: 20%;
 }
 
@@ -46,4 +46,10 @@ div {
   border-radius: 15%;
   padding: 2%;
   box-shadow: 5px 5px black;
+}
+
+.newGameBtn:hover {
+  font-size: 1.9rem;
+  background-color: #155e75;
+  box-shadow: 7px 7px black;
 }
