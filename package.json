@@ -2,7 +2,7 @@
   "name": "memory-card-game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://https://github.com/Barghout22/memory-card-game",
+  "homepage": "http://Barghout22.github.io/memory-card-game",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
