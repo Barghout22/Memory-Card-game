@@ -1,4 +1,14 @@
 import "./App.css";
+import Anubis from "./cardPictures/Anubis.png";
+import Atum from "./cardPictures/Atum.png";
+import Bastet from "./cardPictures/Bastet.png";
+import Geb from "./cardPictures/Geb.png";
+import Horus from "./cardPictures/Horus.png";
+import Khnum from "./cardPictures/Khnum.png";
+import Osiris from "./cardPictures/Osiris.png";
+import Sethan from "./cardPictures/Sethan.png";
+import Thoth from "./cardPictures/Thoth.png";
+
 import CardComponent from "./components/card";
 import React, { useState } from "react";
 import uniqid from "uniqid";
@@ -8,17 +18,18 @@ function App() {
   const [highScore, setHighScore] = useState(0);
   const [endGame, setEndGame] = useState(false);
   const [itemList, setItemList] = useState([
-    { value: "1", id: uniqid() },
-    { value: "2", id: uniqid() },
-    { value: "3", id: uniqid() },
-    { value: "4", id: uniqid() },
-    { value: "5", id: uniqid() },
-    { value: "6", id: uniqid() },
-    { value: "7", id: uniqid() },
-    { value: "8", id: uniqid() },
-    { value: "9", id: uniqid() },
+    { value: Anubis, name: "Anubis", id: uniqid() },
+    { value: Atum, name: "Atum", id: uniqid() },
+    { value: Bastet, name: "Bastet", id: uniqid() },
+    { value: Geb, name: "Geb", id: uniqid() },
+    { value: Horus, name: "Horus", id: uniqid() },
+    { value: Khnum, name: "Khnum", id: uniqid() },
+    { value: Osiris, name: "Osiris", id: uniqid() },
+    { value: Sethan, name: "Sethan", id: uniqid() },
+    { value: Thoth, name: "Thoth", id: uniqid() },
   ]);
   const [gameResult, setGameResult] = useState("");
+  const [yourScore, setYourScore] = useState(0);
 
   const updateScore = (value) => {
     if (value) {
@@ -26,18 +37,17 @@ function App() {
       if (currentScore + 1 > highScore) setHighScore(highScore + 1);
       if (currentScore + 1 === 9) {
         setGameResult("You Won!");
+        setYourScore(currentScore);
         setCurrentScore(0);
         setEndGame(true);
       }
     } else {
-      if (currentScore === 9) {
-        setGameResult("You Won!");
-      } else {
-        setGameResult("Game Over!");
-      }
+      setGameResult("Game Over!");
+      setYourScore(currentScore);
       setCurrentScore(0);
       setEndGame(true);
     }
+    setYourScore(currentScore);
     moveCardsAround();
   };
 
@@ -58,12 +68,14 @@ function App() {
 
   return (
     <div className="App">
-      <div>Jojo's memory game adventure! </div>
+      <div className="Title">Jojo's memory game adventure! </div>
+      <div className="Title">
+        Face Each one of the nine gods only once to pass through!
+      </div>
       {!endGame && (
         <div>
-          <div>Face Each one of the nine gods only once to pass through!</div>
-          <div>Current Score:{currentScore}</div>
-          <div>High Score: {highScore}</div>
+          <div className="scores">Current Score:{currentScore}</div>
+          <div className="scores">High Score: {highScore}</div>
         </div>
       )}
       {/* <img src="./card_pictures/Anubis.png" alt="osiris" /> */}
@@ -73,6 +85,7 @@ function App() {
             <CardComponent
               value={item.value}
               key={item.id}
+              name={item.name}
               updateScore={updateScore}
               currentScore={currentScore}
             />
@@ -81,8 +94,11 @@ function App() {
       )}
       {endGame && (
         <div>
-          <div>{gameResult}</div>
-          <button onClick={restartGame}>Play again</button>
+          <div className="scores">{gameResult}</div>
+          <div className="scores">Your Score:{yourScore}</div>
+          <button className="newGameBtn" onClick={restartGame}>
+            Play again
+          </button>
         </div>
       )}
     </div>

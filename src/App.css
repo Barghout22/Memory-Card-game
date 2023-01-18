@@ -1,10 +1,49 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("./SF-Fedora-Font/SF-Fedora-Shadow.ttf");
+}
+@font-face {
+  font-family: "MyOtherFont";
+  src: url("./SF-Fedora-Font/SF-Fedora-Shadow2.ttf");
+}
+
 body {
   text-align: center;
+  font-family: "MyFont";
+  background-color: #d1fae5;
+  color: #0e7490;
+  font-size: 20%;
 }
 
 .cardContainer {
   margin: 20px;
   display: grid;
-  grid-template-columns: repeat(5, minmax(50px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 2rem;
+}
+
+div {
+  margin: 1rem;
+}
+
+.Title {
+  font-size: 2rem;
+}
+
+.scores {
+  font-size: 2rem;
+}
+
+.cardTitle {
+  font-size: 2rem;
+}
+
+.newGameBtn {
+  font-family: "MyFont";
+  color: white;
+  font-size: 2rem;
+  background-color: #0e7490;
+  border-radius: 15%;
+  padding: 2%;
+  box-shadow: 5px 5px black;
 }

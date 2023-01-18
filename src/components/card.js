@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 function CardComponent(props) {
   const [alreadyClicked, setAlreadyClicked] = useState(false);
-
   const adjustScore = (value) => {
     if (value) {
       setAlreadyClicked(true);
@@ -17,7 +16,10 @@ function CardComponent(props) {
   };
   return (
     <div key={props.id} onClick={handleClick}>
-      {props.value}
+      <div>
+        <img src={props.value.toString()} alt={props.name.toString()} />
+      </div>
+      <div className="cardTitle">{props.name}</div>
     </div>
   );
 }
