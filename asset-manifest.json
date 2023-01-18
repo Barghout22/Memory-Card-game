@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "//github.io/Barghout22/memory-card-game/static/css/main.c63119a3.css",
-    "main.js": "//github.io/Barghout22/memory-card-game/static/js/main.700cf186.js",
-    "static/media/Osiris.png": "//github.io/Barghout22/memory-card-game/static/media/Osiris.76f2bb28375fb1eea510.png",
-    "static/media/SF-Fedora-Shadow2.ttf": "//github.io/Barghout22/memory-card-game/static/media/SF-Fedora-Shadow2.df84e8adc621565cbc0c.ttf",
-    "static/media/Horus.png": "//github.io/Barghout22/memory-card-game/static/media/Horus.564423a3009c8d618d10.png",
-    "static/media/Thoth.png": "//github.io/Barghout22/memory-card-game/static/media/Thoth.79bcf87c8d571ed2ab4b.png",
-    "static/media/Anubis.png": "//github.io/Barghout22/memory-card-game/static/media/Anubis.e814b404c3aa477b9f47.png",
-    "static/media/Sethan.png": "//github.io/Barghout22/memory-card-game/static/media/Sethan.1814ce378381faee361c.png",
-    "static/media/Atum.png": "//github.io/Barghout22/memory-card-game/static/media/Atum.ae0ce441da2331cdb933.png",
-    "static/media/Geb.png": "//github.io/Barghout22/memory-card-game/static/media/Geb.895b674d313226a24821.png",
-    "static/media/Bastet.png": "//github.io/Barghout22/memory-card-game/static/media/Bastet.590fd6beae88ad0c8c5e.png",
-    "static/media/SF-Fedora-Shadow.ttf": "//github.io/Barghout22/memory-card-game/static/media/SF-Fedora-Shadow.dfefb48040dda871772c.ttf",
-    "static/media/Khnum.png": "//github.io/Barghout22/memory-card-game/static/media/Khnum.66791c3507029f9b3110.png",
-    "index.html": "//github.io/Barghout22/memory-card-game/index.html",
-    "main.c63119a3.css.map": "//github.io/Barghout22/memory-card-game/static/css/main.c63119a3.css.map",
-    "main.700cf186.js.map": "//github.io/Barghout22/memory-card-game/static/js/main.700cf186.js.map"
+    "main.css": "/memory-card-game/static/css/main.661fcdf7.css",
+    "main.js": "/memory-card-game/static/js/main.df8d1f18.js",
+    "static/media/Osiris.png": "/memory-card-game/static/media/Osiris.76f2bb28375fb1eea510.png",
+    "static/media/SF-Fedora-Shadow2.ttf": "/memory-card-game/static/media/SF-Fedora-Shadow2.df84e8adc621565cbc0c.ttf",
+    "static/media/Horus.png": "/memory-card-game/static/media/Horus.564423a3009c8d618d10.png",
+    "static/media/Thoth.png": "/memory-card-game/static/media/Thoth.79bcf87c8d571ed2ab4b.png",
+    "static/media/Anubis.png": "/memory-card-game/static/media/Anubis.e814b404c3aa477b9f47.png",
+    "static/media/Sethan.png": "/memory-card-game/static/media/Sethan.1814ce378381faee361c.png",
+    "static/media/Atum.png": "/memory-card-game/static/media/Atum.ae0ce441da2331cdb933.png",
+    "static/media/Geb.png": "/memory-card-game/static/media/Geb.895b674d313226a24821.png",
+    "static/media/Bastet.png": "/memory-card-game/static/media/Bastet.590fd6beae88ad0c8c5e.png",
+    "static/media/SF-Fedora-Shadow.ttf": "/memory-card-game/static/media/SF-Fedora-Shadow.dfefb48040dda871772c.ttf",
+    "static/media/Khnum.png": "/memory-card-game/static/media/Khnum.66791c3507029f9b3110.png",
+    "index.html": "/memory-card-game/index.html",
+    "main.661fcdf7.css.map": "/memory-card-game/static/css/main.661fcdf7.css.map",
+    "main.df8d1f18.js.map": "/memory-card-game/static/js/main.df8d1f18.js.map"
   },
   "entrypoints": [
-    "static/css/main.c63119a3.css",
-    "static/js/main.700cf186.js"
+    "static/css/main.661fcdf7.css",
+    "static/js/main.df8d1f18.js"
   ]
 }
